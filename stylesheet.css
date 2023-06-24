@@ -1,0 +1,25 @@
+html {
+    background-color: #020659;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 1.25em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p{
+    font-size: 1em;
+}
+
+footer p {
+    font-size: 0.75em;
+}
+
