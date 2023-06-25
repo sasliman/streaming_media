@@ -1,6 +1,11 @@
-body {
+html {
     background-color: #020659;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body{
+    margin: 0 auto;
 }
 
 h1 {
@@ -9,10 +14,12 @@ h1 {
 
 h2 {
     font-size: 1em;
+    font-weight: bolder;
 }
 
 h3 {
     font-size: 1em;
+    font-weight: bolder;
 }
 
 p{
@@ -23,3 +30,598 @@ footer p {
     font-size: 0.75em;
 }
 
+footer {
+    background-color: white;
+    color:#590242;
+    text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+
+    body {
+        width:375px;
+        margin: 0 auto;
+    }
+
+    header {
+        background-color: #020873;
+    }
+
+    /* START OF PRESET CODE FOR NAV */
+
+   ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        cursor: pointer;
+        display: inline-block;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    label span {
+        background-color: #ffffff;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background-color .2s ease-out;
+        width: 18px;
+    }
+
+    label span:before, label span:after {
+        background: #ffffff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    label span:before {
+        top: 5px;
+    }
+
+    label span:after {
+        top: -5px;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked ~ ul {
+        max-height: 500px;
+    }
+
+    input:checked ~ label span {
+        background: transparent;
+    }
+
+    input:checked ~ label span:before {
+        transform: rotate(-45deg);
+    }
+
+    input:checked ~ label span:after {
+        transform: rotate(45deg);
+    }
+
+    input:checked ~ label:not(.steps) span:before, input:unchecked ~ label:not(.steps) span:after {
+        top: 0;
+    }
+
+    /* END OF PRESET CODE FOR NAV */
+
+    a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    li a {
+        display: block;
+        width: 100%;
+    }
+
+    li a:hover {
+        background-color: white;
+        color: #020873;
+    }
+
+    .title {
+        z-index: 5;
+        text-align: center;
+        font-variant: small-caps;
+        float: right;
+        margin-top: 16px;
+        margin-right: 100px;
+        margin-bottom: 0px;
+    }
+
+    section.intro {
+        background-image: linear-gradient(to right, #2104D9, #020559, #000000);
+        margin-top: -17px;
+    }
+
+    section.intro h1 {
+        margin-left: 20px;
+        padding-top: 10px;
+        text-transform: capitalize;
+    }
+
+    section.intro p {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    section.trending {
+        background-color: #ffffff;
+        color: #590242;
+        margin-top: -17px;
+        padding-bottom: 20px;
+    }
+
+    section.trending h2 {
+        padding-top:30px;
+        margin-left: 30px;
+        font-weight: 700;
+    }
+
+    div.trendingmusic {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -17px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    div.aloma, div.myroad, div.papaya, div.smoothies {
+        padding-right: 20px;
+    }
+
+    div.aloma {
+        position: relative;
+    }
+
+    div.image-container-aloma {
+        position: relative;
+        display: inline-block;
+    }
+
+    div.aloma audio {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 50%;
+    }
+
+    div.info-aloma {
+        background: lightgray;
+        margin-top: -20px;
+    }
+
+    div.info-aloma h3, div.info-aloma p {
+        margin-left: 10px;
+    }
+
+    div.info-aloma h3 {
+        padding-top: 10px;
+    }
+
+    div.info-aloma p {
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+
+    div.myroad {
+        position: relative;
+    }
+
+    div.image-container-myroad {
+        position: relative;
+        display: inline-block;
+    }
+
+    div.myroad audio {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 50%;
+    }
+
+    div.info-myroad {
+        background: lightgray;
+        margin-top: -20px;
+    }
+
+    div.info-myroad h3, div.info-myroad p {
+        margin-left: 10px;
+    }
+
+    div.info-myroad h3 {
+        padding-top: 10px;
+    }
+
+    div.info-myroad p {
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+
+    div.papaya {
+        position: relative;
+    }
+
+    div.image-container-papaya {
+        position: relative;
+        display: inline-block;
+    }
+
+    div.papaya audio {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 50%;
+    }
+
+    div.info-papaya {
+        background: lightgray;
+        margin-top: -20px;
+    }
+
+    div.info-papaya h3, div.info-papaya p {
+        margin-left: 10px;
+    }
+
+    div.info-papaya h3 {
+        padding-top: 10px;
+    }
+
+    div.info-papaya p {
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+
+    div.smoothies {
+        position: relative;
+    }
+
+    div.image-container-smoothies {
+        position: relative;
+        display: inline-block;
+    }
+
+    div.smoothies audio {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 50%;
+    }
+
+    div.info-smoothies {
+        background: lightgray;
+        margin-top: -20px;
+    }
+
+    div.info-smoothies h3, div.info-smoothies p {
+        margin-left: 10px;
+    }
+
+    div.info-smoothies h3 {
+        padding-top: 10px;
+    }
+
+    div.info-smoothies p {
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+
+    div.successful {
+        position: relative;
+    }
+
+    div.image-container-successful {
+        position: relative;
+        display: inline-block;
+    }
+
+    div.successful audio {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 50%;
+    }
+
+    div.info-successful {
+        background: lightgray;
+        margin-top: -20px;
+    }
+
+    div.info-successful h3, div.info-successful p {
+        margin-left: 10px;
+    }
+
+    div.info-successful h3 {
+        padding-top: 10px;
+    }
+
+    div.info-successful p {
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+
+    .trending ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    .trending ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 15px #590242;
+    }
+
+    .trending ::-webkit-scrollbar-thumb {
+        background: #590242;
+        border-radius: 5px;
+    }
+
+    .trending ::-webkit-scrollbar-thumb:hover {
+        background: #020659;
+    }
+
+    button {
+        background-color: #590242;
+        color: white;
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left:35px;
+        padding-right:35px;
+        border-radius: 3px;
+        margin-top: 10px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    button:hover {
+        background-color: #020659;
+        color: white;
+        cursor: pointer;
+    }
+
+    section.yourplaylists {
+        background-color: #ffffff;
+        color:#590242;
+        margin-top: -17px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    section.yourplaylists h2 {
+        margin-left: 30px;
+        font-weight: 700;
+    }
+
+    div.yourplaylists-scroll {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        background-color: #2699FB;
+        color: #ffffff;
+    }
+
+    div.bestof2020, div.pumpkin, div.storm, div.smoothjazz, div.smoothstudy {
+        margin: 10px;
+        background-color: #0D8DF8;
+        padding: 5px;
+        text-align: center;
+    }
+
+    div.bestof2020:hover, div.pumpkin:hover, div.storm:hover, div.smoothjazz:hover, div.smoothstudy:hover {
+        cursor: pointer;
+    }
+
+    div.bestof2020 {
+        margin-left: 5px;
+    }
+
+    div.smoothstudy {
+        margin-right: 5px;
+    }
+
+    .yourplaylists ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    .yourplaylists ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 15px #020659;
+    }
+
+    .yourplaylists ::-webkit-scrollbar-thumb {
+        background: #020659;
+        border-radius: 5px;
+    }
+
+    .yourplaylists ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+
+    section.curatedplaylists {
+        background-color: #ffffff;
+        color:#590242;
+        margin-top: -17px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    section.curatedplaylists h2 {
+        margin-left: 30px;
+        font-weight: 700;
+    }
+
+    div.curatedplaylists-scroll {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        background-color: #030a8c;
+        color: #ffffff;
+    }
+
+    div.boozy, div.dinner, div.mellow, div.chill, div.sax {
+        margin: 10px;
+        background-color: #020873;
+        padding: 5px;
+        text-align: center;
+    }
+
+    div.boozy:hover, div.dinner:hover, div.chill:hover, div.mellow:hover, div.sax:hover {
+        cursor: pointer;
+    }
+
+    div.boozy {
+        margin-left: 5px;
+    }
+
+    div.mellow {
+        margin-right: 5px;
+    }
+
+    .curatedplaylists ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    .curatedplaylists ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 15px #020659;
+    }
+
+    .curatedplaylists ::-webkit-scrollbar-thumb {
+        background: #020659;
+        border-radius: 5px;
+    }
+
+    .curatedplaylists ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+
+    footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+@media screen and (min-width:834px) {
+    
+    body {
+        width: 834px;
+    }
+    
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 550px;
+        margin-left: 300px;
+        margin-top:25px;
+    }
+    
+    .title {
+        margin-left: 0;
+        margin-right: 650px;
+    }
+
+    label span, input {
+        display: none;
+    }
+
+    section.trending button {
+        margin-left: 665px;
+    }
+
+    .playlists {
+        display: flex;
+    }
+
+    .yourplaylists {
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .curatedplaylists {
+        flex: 1;
+        overflow-y: hidden;
+    }
+
+    .yourplaylists-scroll {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+ 
+    .bestof2020, .pumpkin, .storm, .smoothjazz, .smoothstudy, .boozy, .dinner, .mellow, .chill, .sax {
+        display: flex;
+        align-items: center;
+        max-height: 121px;
+    }
+
+    .bestof2020 img, .pumpkin img, .storm img, .smoothjazz img, .smoothstudy img, .boozy img, .dinner img, .mellow img, .chill img, .sax img {
+        flex: 0 0 auto;
+        margin-right: 10px;
+    }
+      
+    .bestof2020 .bestof2020-info, .pumpkin .pumkin-info, .storm .storm-info, .smoothjazz .smoothjazz-info, .smoothstudy .smoothstudy-info, .boozy .boozy-info, .dinner .dinner-info, .mellow .mellow-info, .chill .chill-info, .sax .sax-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bestof2020 h3, .bestof2020 p, .pumpkin h3, .pumpkin p, .storm h3, .storm p, .smoothjazz h3, .smoothjazz p, .smoothstudy h3, .smoothstudy p, .boozy h3, .boozy p, .dinner h3, .dinner p, .mellow h3, .mellow p, .chill h3, .chill p, .sax h3, .sax p {
+        flex: 1;
+    }
+
+    div.yourplaylists-scroll {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        max-height: 400px;
+    }
+
+    div.curatedplaylists-scroll {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        max-height: 400px;
+    }
+
+    section.yourplaylists button {
+        margin-left: 250px;
+    }
+
+    section.curatedplaylists button {
+        margin-left: 250px;
+    }
+}
